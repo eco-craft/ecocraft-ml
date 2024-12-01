@@ -25,17 +25,17 @@ def make_prediction(file, class_labels):
 
     # Prepare the image for prediction
     image = prepare_image(file_path)
-    predictions = model.predict(image).flatten()  # Flatten to 1D array if needed
-    os.remove(file_path)  # Remove the saved file after prediction
+    predictions = model.predict(image).flatten()  
+    os.remove(file_path)  
 
    
     results = {}
     for index, probability in enumerate(predictions):
-        if probability > 0.0:  # Check if the probability is greater than 40%
-            results[class_labels[index]] = float(probability)  # Store the class and its probability
+        if probability > 0.40 : 
+            results[class_labels[index]] = float(probability)
 
-    # Check if any results were found
+ 
     if results:
-        return results  # Return all classes that exceed 40% probability
+        return results
     else:
-        return {'error': 'No categories exceed 40% probability.'}  # Return error message
+        return {'error': 'No categories exceed 40% probability.'} 

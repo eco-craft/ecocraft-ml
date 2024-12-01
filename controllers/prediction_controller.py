@@ -2,8 +2,8 @@ from flask import request, jsonify
 from services.ml_service import make_prediction
 
 
-
 class_labels = ['Botol Kaca', 'Botol Plastik', 'Garpu', 'Kain', 'Kaleng', 'Kardus', 'Kayu', 'Kotak Susu', 'Sedotan', 'Sendok']
+
 
 def predict_controller(request):
     # Validate the request
