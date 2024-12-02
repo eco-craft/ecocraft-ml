@@ -1,1 +1,1 @@
-# EcoCraft Machine Learnig Service
+# EcoCraft Machine Learning Service
