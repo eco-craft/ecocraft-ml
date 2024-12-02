@@ -1,6 +1,6 @@
-# EcoCraf Machine Learning
+# EcoCraft Machine Learning
 
-Welcome to the EcoCraf Machine Learning! This project leverages machine learning to classify different types of waste based on images uploaded by users. The system utilizes a pre-trained model to predict the category of waste and provide probabilities for each class.
+Welcome to the EcoCraft Machine Learning! This project leverages machine learning to classify different types of waste based on images uploaded by users. The system utilizes a pre-trained model to predict the category of waste and provide probabilities for each class.
 
 ## Table of Contents
 
