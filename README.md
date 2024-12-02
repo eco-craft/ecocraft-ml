@@ -41,3 +41,10 @@ To set up this project locally, follow these steps:
    
 3. Download the pre-trained model and place it in the model directory.
 
+## Usage
+
+
+# api-endpoints
+
+
+

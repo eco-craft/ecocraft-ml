@@ -26,16 +26,16 @@ def make_prediction(file, class_labels):
     # Prepare the image for prediction
     image = prepare_image(file_path)
     predictions = model.predict(image).flatten()  
-    os.remove(file_path)  
+    os.remove(file_path)
 
    
     results = {}
     for index, probability in enumerate(predictions):
-        if probability > 0.40 : 
+        if probability > 0.40 :
             results[class_labels[index]] = float(probability)
 
  
     if results:
         return results
     else:
-        return {'error': 'No categories exceed 40% probability.'} 
+        return {'error': 'No categories found.'} 

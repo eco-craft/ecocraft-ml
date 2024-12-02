@@ -5,8 +5,11 @@ ml_route = Blueprint("main", __name__)
 
 
 # prediction route
-@ml_route.route("/", methods=["POST","GET"])
-def prediction():
-    if request.method == "POST":
-        return predict_controller(request)
+@ml_route.route("/predict", methods=["POST"])
+def predict():
+    return predict_controller(request)
+
+
+@ml_route.route("/", methods=["GET"])
+def index():
     return "OK"
