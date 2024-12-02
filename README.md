@@ -1,6 +1,6 @@
-# Waste Classification Prediction System
+# EcoCraf Machine Learning
 
-Welcome to the Waste Classification Prediction System! This project leverages machine learning to classify different types of waste based on images uploaded by users. The system utilizes a pre-trained model to predict the category of waste and provide probabilities for each class.
+Welcome to the EcoCraf Machine Learning! This project leverages machine learning to classify different types of waste based on images uploaded by users. The system utilizes a pre-trained model to predict the category of waste and provide probabilities for each class.
 
 ## Table of Contents
 
