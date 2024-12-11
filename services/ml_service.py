@@ -35,9 +35,16 @@ def make_prediction(file, class_labels):
             del image
             gc.collect()
         
-            results = {class_labels[index]: float(prob) for index, prob in enumerate(predictions) if prob > 0.40}
-            return results if results else {'error': 'No categories found.'}
- 
+            results = {class_labels[index]: float(prob) for index, prob in enumerate(predictions)}
+
+
+            if results:
+                  best_label = max(results, key=results.get)  
+                  best_prob = results[best_label]
+                  return {best_label: best_prob}  
+            else:
+                  return {'error': 'No categories found.'}
+                  
 
 
 
