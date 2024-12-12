@@ -8,7 +8,7 @@ Welcome to the EcoCraft Machine Learning! This project leverages machine learnin
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [API Endpoints](#api-endpoints)
+- [API Endpoints](#API-Endpoints)
 
 
 ## Features
@@ -49,7 +49,7 @@ flask run
 The application will run at http://127.0.0.1:5000/ by default.
 
 
-## API Documentation
+## API Endpoints
 
 ### Predict
 - **Endpoint:** `/predict`
