@@ -41,8 +41,61 @@ To set up this project locally, follow these steps:
 
 ## Usage
 
+To run the Flask application, use the following command:
 
-## api-endpoints
+```bash
+flask run
+```
+The application will run at http://127.0.0.1:5000/ by default.
+
+
+## API Documentation
+
+### Predict
+- **Endpoint:** `/predict`
+- **Method:** `POST`
+- **Description:** Accepts an image file for making predictions.
+
+#### Request:
+The request should include an image file in `multipart/form-data`.
+
+**Example with cURL:**
+```bash
+curl -X POST -F "file=@image.jpg" http://127.0.0.1:5000/predict
+```
+
+#### Response:
+The response will be a JSON object containing the prediction result.
+
+**Example Response:**
+```json
+{
+    "prediction": "result_value"
+}
+```
+
+
+### Health Check
+- **Endpoint:** `/`
+- **Method:** `GET`
+- **Description:** Checks if the API is operational.
+
+#### Response:
+```text
+OK
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
